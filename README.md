@@ -27,8 +27,8 @@ Rediview is designed to help researchers, journalists, and curious minds underst
 
 It currently analyzes ~8,000 Reddit posts from 23rd July 2024 to 18th February 2025.
 
-Frontend Pages
-Dashboard
+# Frontend Pages
+## Dashboard
 Path: /
 
 Purpose: Overview of the dataset with visuals and metrics.
@@ -40,7 +40,7 @@ Features:
 - Pie charts for subreddit distribution
 - Misleading/highly controversial post highlights
 
-Story
+## Story
 Path: /story
 
 Purpose: Tells a structured, multi-paragraph narrative based on the dataset.
@@ -51,7 +51,7 @@ Features:
 - Image visualizations (topic spread, flashpoints, top authors)
 - Highlights key moments, sentiment trends, and dominant figures
 
-Chat
+## Chat
 Path: /chat
 
 Purpose: Ask questions about the Reddit dataset.
@@ -62,7 +62,7 @@ Features:
 - Supports queries like: "What are the top trending topics?", "Show controversial posts" or "Summarize sentiment"
 
 
-Subreddits
+## Subreddits
 Path: /subreddits
 
 Purpose: Explore Reddit posts from specific subreddits.
@@ -73,8 +73,8 @@ Features:
 - Carousel-like scroll experience for posts
 
 
-Backend API
-API Endpoints
+# Backend API
+## API Endpoints
 /posts  
 Method: POST  
 
@@ -94,7 +94,7 @@ Output: Generated response string
 
 Function: Triggers different backend analysis functions based on the user’s query
 
-Functions in code.py
+## Functions in code.py
 - fetch_reddit_posts() → Fetches fresh posts from Reddit
 - subreddit_activity() → Post volume by subreddit
 - top_authors() → Most active users
@@ -105,7 +105,7 @@ Functions in code.py
 - generate_narrative() → Generates formal story with Gemini
 - /ask → Interprets user queries to dynamically trigger the above functions
 
-Functions in new_reddit.py
+## Functions in new_reddit.py
 Core Data Functions
 - load_reddit_data(path) → Loads .jsonl Reddit dump
 - preprocess(df) → Cleans and enriches dataset
