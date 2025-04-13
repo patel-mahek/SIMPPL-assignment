@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+api/__pycache__
+api/batch_analyses
+
+package-lock.json
+
+api/top_authors.html
+api/post_trends.html
+api/gemini_summary.txt
+api/narrative_story_with_examples.txt
+api/top_subreddits.html
+api/author_network.html
